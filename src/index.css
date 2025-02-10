@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.car-animation {
+  animation: drive 10s linear infinite;
+  position: absolute;
+  bottom: 4px;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(calc(100vw + 50px));
+  }
+}
